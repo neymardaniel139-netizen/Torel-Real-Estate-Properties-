@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./publc/images/real\ estate\ background.jpeg);
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+
+}
+
+:root {
+  --button: rgba(218, 165, 32, 1);
+  --second-button: rgb(10, 4, 90);
+}
+
+p {
+  color: black;
+  margin: 0;
+}
+
+a {
+  color: white;
+  font-size: small;
+  text-decoration: none;
+}
+
+label {
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 85px;
+}
+
+/* BEGINNIG OF HEADER STYLING*/
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+header h2 {
+  color: white;
+  margin: 0;
+}
+
+header span {
+  color: goldenrod;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.interact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  width: 230px;
+  height: 40px;
+  border-radius: 10px;
+  gap: 3px;
+  background-color: white;
+}
+
+.createacct input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.createacct input:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* END OF HEADER STYLING */
+
+/* BEGINNING OF HERO SECTION STYLING */
+
+.hero {
+  background-size: 100%;
+  background: no-repeat;
+  height: 380px;
+  width: 100%;
+}
+
+.hero-text {
+  width: 350px;
+  margin: 50px 90px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-text h1 {
+  color: white;
+  margin-top: 20px;
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+.hero-text p {
+  color: goldenrod;
+  font-size: small;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.hero-text span {
+  margin-top: 15px;
+  color: white;
+}
+
+.explore {
+  width: 250px;
+  height: 50px;
+  background-color: var(--button);
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  margin: 0;
+}
+/* END OF HERO STYLING */
+
+/* BEGINNING OF SEARCH STYLING */
+.search-sec {
+  background-color: white;
+  width: 85%;
+  min-height: 120px;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 110px;
+  right: 50px;
+  top: 50px;
+}
+.various-searches {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.location-text {
+  width: 230px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  border: 1px solid;
+  border-radius: 8px;
+}
+.location-text input {
+  outline: none;
+  border: none;
+}
+.property-text {
+  width: 230px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  border: 1px solid;
+  border-radius: 8px;
+}
+.property-type input {
+  outline: none;
+  border: none;
+}
+.price-text {
+  width: 230px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  border: 1px solid;
+  border-radius: 8px;
+}
+.price input {
+  outline: none;
+  border: none;
+}
+.opinions {
+  width: 200px;
+  height: 45px;
+  border: ipx solid;
+  background-color: var(--second-button);
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+}
+/* END OF SEARCH STYLING */
+
+/* BEGINNING OF PROPERTIES STYLING */
+.properties {
+  width: cover;
+  height: 600px;
+  background-color: white;
+  background-size: 100%;
+}
+.popular-props {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 110px;
+}
+.properties h1 {
+  font-size: xx-large;
+  position: relative;
+  top: 115px;
+  left: 110px;
+}
+.properties p {
+  color: var(--button);
+  font-weight: 600;
+  position: relative;
+  top: 100px;
+  left: 110px;
+  color: black;
+}
+.prop-one {
+  width: 350px;
+  height: 287px;
+  border: 1px solid rgb(230, 226, 226);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 10px 10px 0 rgba(127, 124, 124, 0.7);
+}
+.prop-one:hover{
+  transition: transform 0.7s ease;
+  transform: scale(1.03);
+}
+.propone-house {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.propone-details {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.propone-details span {
+  font-weight: 700;
+}
+.located {
+  font-weight: lighter;
+  font-size: 13px;
+}
+/* BEGINNNG OF PROP TWO */
+
+.prop-two {
+  width: 350px;
+  height: 287px;
+  margin: 150px 0;
+  border: 1px solid rgb(230, 226, 226);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 10px 10px 0 rgba(127, 124, 124, 0.7);
+}
+.prop-two:hover{
+  transition: transform 0.7s ease;
+  transform: scale(1.03);
+}
+.twoimg {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.proptwo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.proptwo-text span {
+  font-weight: 700;
+}
+.mara {
+  font-weight: lighter;
+  font-size: 13px;
+}
+/* BEGINNING OF PROP THREE  */
+.prop-three {
+  width: 350px;
+  height: 287px;
+  margin: 150px 0;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 10px 10px 0 rgba(127, 124, 124, 0.7 );
+}
+.prop-three:hover{
+  transition: transform 0.7s ease;
+  transform: scale(1.05)
+}
+.fivebed {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.propthree-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 700;
+}
+.rare {
+  font-weight: lighter;
+  font-size: 13px;
+}
+/* END OF PROPERTIES STYLING */
+
+/* BEGGINING OF REASONS STYLING */ 
+.reasons{
+  width: cover;
+  height: 200px;
+  background-color: gray;
+}
+.reasons-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trustable span{
+  font-weight: 700;
+}
+.trustable p{
+  font-size: 12px;
+  font-weight: lighter;
+  margin: 8px 0 0 50px;
+}

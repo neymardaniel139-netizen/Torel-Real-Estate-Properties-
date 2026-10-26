@@ -424,5 +424,366 @@ nav {
 /* BEGINNING OF CONCLUSION STYLING */
 .conclusion {
   width: 100%;
-  height: 300px;
+  height: 100%;
+  background-color: rgb(6, 6, 49);
+  color: white;
+}
+.slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slogan-img {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.brighter{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BEGINNING OF MOBILE VIEW STYLING — 320px */
+@media screen and (max-width: 320px) {
+
+  body {
+    overflow-x: hidden;
+    background-size: auto 550px;
+    background-position: top center;
+  }
+
+  /* HEADER */
+  header {
+    padding: 12px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .logo-container {
+    gap: 5px;
+  }
+
+  .logo {
+    width: 22px;
+    height: 22px;
+  }
+
+  header h2 {
+    font-size: 17px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .interact {
+    width: 135px;
+    height: 32px;
+    gap: 5px;
+  }
+
+  .search svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .createacct input {
+    width: 100px;
+    min-width: 0;
+    font-size: 11px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    min-height: 390px;
+    background: none;
+  }
+
+  .hero-text {
+    width: auto;
+    margin: 35px 18px 0;
+    gap: 28px;
+  }
+
+  .hero-header {
+    gap: 12px;
+  }
+
+  .hero-text p {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 27px;
+    line-height: 1.3;
+    margin-top: 8px;
+  }
+
+  .hero-text span {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 5px;
+  }
+
+  .explore {
+    width: 180px;
+    height: 44px;
+    font-size: 12px;
+  }
+
+  /* PROPERTY SEARCH */
+  .search-sec {
+    width: calc(100% - 28px);
+    min-height: auto;
+    padding: 18px 12px;
+    margin: -25px auto 0;
+    left: auto;
+    right: auto;
+    top: auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .various-searches {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .location,
+  .property-type,
+  .price {
+    width: 100%;
+  }
+
+  .location label,
+  .property-type label,
+  .price label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .location-text,
+  .property-text,
+  .price-text {
+    width: 100%;
+    height: 40px;
+    justify-content: flex-start;
+    padding: 0 8px;
+    gap: 6px;
+  }
+
+  .location-text svg,
+  .property-text svg,
+  .price-text svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .location-text input,
+  .property-text input,
+  .price-text input {
+    width: 100%;
+    min-width: 0;
+    font-size: 11px;
+  }
+
+  .opinions {
+    width: 100%;
+    height: 42px;
+    font-size: 13px;
+  }
+
+  .opinions svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* FEATURED PROPERTIES */
+  .properties {
+    width: 100%;
+    height: auto;
+    padding: 35px 14px;
+  }
+
+  .properties p {
+    position: static;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .properties h1 {
+    position: static;
+    font-size: 23px;
+    margin-bottom: 22px;
+  }
+
+  .popular-props {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+  }
+
+  .prop-one,
+  .prop-two,
+  .prop-three {
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    margin: 0;
+    padding-bottom: 12px;
+    border: 1px solid rgb(230, 226, 226);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .propone-house,
+  .twoimg,
+  .fivebed {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .propone-details,
+  .proptwo-text,
+  .propthree-text {
+    padding: 12px;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .propone-details span,
+  .proptwo-text span,
+  .propthree-text span {
+    overflow-wrap: anywhere;
+  }
+
+  .located,
+  .mara,
+  .rare {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .propone-details svg,
+  .proptwo-text svg,
+  .propthree-text svg {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+  }
+
+  .see-more {
+    width: 150px;
+    height: 48px;
+    margin: 25px auto 0;
+  }
+
+  .see-more svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* WHY PICK US */
+  .reasons {
+    width: 100%;
+    height: auto;
+    padding: 30px 18px;
+  }
+
+  .reasons h1 {
+    font-size: 23px;
+    padding-bottom: 25px;
+  }
+
+  .reasons-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .trustable span,
+  .selection span,
+  .find-support span {
+    justify-content: flex-start;
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .trustable svg,
+  .selection svg,
+  .find-support svg {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+  }
+
+  .trustable p,
+  .selection p,
+  .find-support p {
+    font-size: 11px;
+    margin: 6px 0 0 45px;
+  }
+
+  /* FOOTER */
+  .conclusion {
+    width: 100%;
+    height: auto;
+    padding: 25px 18px;
+  }
+
+  .slogan {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .slogan-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .slogan h2 {
+    font-size: 19px;
+  }
+
+  .brighter {
+    justify-content: flex-start;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .conclusion-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  .quick-links h5,
+  .contact h5 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .quick-links p,
+  .contact span {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .contact svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
 }

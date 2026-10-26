@@ -5,8 +5,8 @@
 }
 
 body {
-  background-image: url(./publc/images/real\ estate\ background.jpeg);
   font-family: Arial, sans-serif;
+  background-image: url(./publc/images/real\ estate\ background.jpeg);
   background-repeat: no-repeat;
   min-height: 550px;
   background-size: 100%;
@@ -447,7 +447,7 @@ nav {
 }
 
 /* BEGINNING OF MOBILE VIEW STYLING — 320px */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
 
   body {
     overflow-x: hidden;

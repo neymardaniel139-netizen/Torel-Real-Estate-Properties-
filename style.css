@@ -9,10 +9,8 @@ body {
   font-family: Arial, sans-serif;
   background-repeat: no-repeat;
   min-height: 550px;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
   overflow-x: hidden;
-
 }
 
 :root {
@@ -147,6 +145,10 @@ nav {
   border-radius: 8px;
   margin: 0;
 }
+.explore:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.09);
+}
 /* END OF HERO STYLING */
 
 /* BEGINNING OF SEARCH STYLING */
@@ -221,13 +223,19 @@ nav {
   color: white;
   font-weight: 700;
   border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10px;
 }
 /* END OF SEARCH STYLING */
 
 /* BEGINNING OF PROPERTIES STYLING */
 .properties {
   width: cover;
-  height: 600px;
+  height: 100%;
   background-color: white;
   background-size: 100%;
 }
@@ -250,7 +258,6 @@ nav {
   position: relative;
   top: 100px;
   left: 110px;
-  color: black;
 }
 .prop-one {
   width: 350px;
@@ -259,7 +266,7 @@ nav {
   border-radius: 10px 10px 0 0;
   box-shadow: 0 10px 10px 0 rgba(127, 124, 124, 0.7);
 }
-.prop-one:hover{
+.prop-one:hover {
   transition: transform 0.7s ease;
   transform: scale(1.03);
 }
@@ -292,7 +299,7 @@ nav {
   border-radius: 10px 10px 0 0;
   box-shadow: 0 10px 10px 0 rgba(127, 124, 124, 0.7);
 }
-.prop-two:hover{
+.prop-two:hover {
   transition: transform 0.7s ease;
   transform: scale(1.03);
 }
@@ -320,11 +327,11 @@ nav {
   height: 287px;
   margin: 150px 0;
   border-radius: 10px 10px 0 0;
-  box-shadow: 0 10px 10px 0 rgba(127, 124, 124, 0.7 );
+  box-shadow: 0 10px 10px 0 rgba(127, 124, 124, 0.7);
 }
-.prop-three:hover{
+.prop-three:hover {
   transition: transform 0.7s ease;
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 .fivebed {
   width: 100%;
@@ -342,24 +349,80 @@ nav {
   font-weight: lighter;
   font-size: 13px;
 }
+.see-more {
+  width: 200px;
+  height: 70px;
+  background-color: var(--button);
+  border-radius: 10px;
+  display: block;
+  margin: 0 7px 15px auto;
+}
+.see-more span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
 /* END OF PROPERTIES STYLING */
 
-/* BEGGINING OF REASONS STYLING */ 
-.reasons{
+/* BEGGINING OF REASONS STYLING */
+.reasons {
   width: cover;
-  height: 200px;
-  background-color: gray;
+  height: 250px;
+  background-color: rgb(206, 203, 203);
+  padding: 50px;
 }
-.reasons-text{
+.reasons h1 {
+  text-align: center;
+  color: var(--button);
+  padding-bottom: 30px;
+}
+.reasons-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.trustable span{
+.trustable span {
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.trustable p{
+.trustable p {
   font-size: 12px;
   font-weight: lighter;
   margin: 8px 0 0 50px;
+}
+.selection span {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.selection p {
+  font-size: 12px;
+  font-weight: lighter;
+  margin: 8px 0 0 50px;
+}
+.find-support span {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.find-support p {
+  font-size: 12px;
+  font-weight: lighter;
+  margin: 8px 0 0 50px;
+}
+/* END OF REASON STLING  */
+
+/* BEGINNING OF CONCLUSION STYLING */
+.conclusion {
+  width: 100%;
+  height: 300px;
 }
